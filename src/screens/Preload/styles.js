@@ -14,8 +14,8 @@ export const LoadingIcon = styled.ActivityIndicator`
 
 export const TitleText = styled.Text`
   text-align:center;
-  font-size: 16px;
-  font-family:Arial;
+  font-size: 24px;
+  font-family:Sans-serif;
   font-weight:bold;
   color: #fff;
 `;

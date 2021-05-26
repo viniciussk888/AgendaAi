@@ -15,11 +15,14 @@ import Api from '../../Api'
 import { UserContext } from '../../contexts/UserContext'
 
 import SignInput from '../../components/SignInput'
+import Lottie from 'lottie-react-native';
 
 import BarberLogo from '../../assets/barber.svg'
 import PersonIcon from '../../assets/person.svg'
 import EmailIcon from '../../assets/email.svg'
 import LockIcon from '../../assets/lock.svg'
+
+import addUser from '../../assets/lottie/add-user.json'
 
 export default () => {
   const { dispatch: userDispatch } = useContext(UserContext) //dispatch(renomeado para userDispatch) constante para enviar informações para Context
@@ -66,7 +69,7 @@ export default () => {
 
   return (
     <Container>
-      <BarberLogo width="100%" height="160" />
+      <Lottie source={addUser} autoPlay loop resizeMode="contain" autoSize />
 
       <InputArea>
         <SignInput 
